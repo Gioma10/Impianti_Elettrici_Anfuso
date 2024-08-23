@@ -2,3 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.myborder{
+  border: 1px solid red;
+}
+header{
+  background-color: #073980;
+  height: 60vh;
+}
