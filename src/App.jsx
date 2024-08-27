@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <Header />
-      <main>
+      <main className="text-white">
         <AboutMe />
       </main>
     </>
