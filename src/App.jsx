@@ -1,6 +1,7 @@
 import AboutMe from "./components/AboutMe";
 import Header from "./components/Header";
 import Services from "./components/Services";
+import Footer from './components/Footer'
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
         <AboutMe />
         <Services />
       </main>
+      <Footer />
     </>
   )
 }
