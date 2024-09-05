@@ -33,10 +33,10 @@ function WorksGallery(){
     };
     return (
         <>
-        <section className="h-2/4 w-full py-16 px-4 flex justify-center bg-gradient-to-t relative group">
-            {/* <img src={Spina} alt="" className='w-1/6 absolute top-0 left-0' /> */}
+        <section className="bg-cyan-700 h-2/4 w-full py-16 px-4 flex justify-center bg-gradient-to-t relative group">
+            <img src={Spina} alt="" className='w-1/6 absolute top-0 left-0' />
             <img src={Spina} alt="" className='w-1/6 absolute rotate-180 bottom-0 right-0' />
-            <div style={{backgroundImage: `url(${photoGallery[currentIndex].url})`}} className="border-2 border-cyan-50 w-2/4 rounded-2xl bg-center bg-cover h-full duration-500 relative">
+            <div style={{backgroundImage: `url(${photoGallery[currentIndex].url})`}} className="border-2 border-black w-2/4 rounded-2xl bg-center bg-cover h-full duration-500 relative">
                 {/* Left arrow */}
                 <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 traslate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
                     <BsChevronCompactLeft onClick={prevSlide} size={30}/>

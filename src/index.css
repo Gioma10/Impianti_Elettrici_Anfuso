@@ -13,9 +13,8 @@
 .hero{
   font-family: "Lato", sans-serif;
   font-weight: 300;
-  font-style: italic;  
+  font-style: italic; 
 }
-
 h1{
   font-family: "Lato", sans-serif;
   font-weight: 900;
@@ -25,4 +24,24 @@ h2{
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-style: italic;
+}
+
+.about-me{
+  height: 70vh;
+}
+
+/* .services{
+  height: 85vh;
+} */
+
+@media (max-width: 400px) {
+  .smallest-p{
+    font-size: 9px;
+    padding: 20px;
+    
+  }
+  .smallest-position{
+    top: -25px;
+    left: -25px;
+  }
 }
