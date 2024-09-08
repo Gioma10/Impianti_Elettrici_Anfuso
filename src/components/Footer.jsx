@@ -1,6 +1,6 @@
 export default function Footer(){
     return (
-        <footer className="bg-cyan-700 flex myborder items-center gap-10 justify-end">
+        <footer className="bg-cyan-700 flex items-center gap-10 justify-end">
 
             <div >
                 <ul>

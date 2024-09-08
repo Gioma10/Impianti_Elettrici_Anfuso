@@ -14,7 +14,7 @@ export default function AboutMe(){
         //     </div>
         // </section>
         <section id='aboutMe' className='about-me'>
-            <h2 className="my-10 text-center text-3xl sm:text-4xl md:text-6xl lg:text-7xl">Chi <span className='text-cyan-700'> sono </span></h2>
+            <h2 className="mt-10 text-center text-3xl sm:text-4xl md:text-6xl lg:text-7xl">Chi <span className='text-cyan-700'> sono </span></h2>
             <div className='w-full h-full flex justify-center items-center '>
                 
                 <p className='smallest-p w-5/6 text-xs sm:text-sm md:text-base md:w-2/3 xl:w-1/2 p-10 bg-cyan-700 rounded-3xl relative'>
