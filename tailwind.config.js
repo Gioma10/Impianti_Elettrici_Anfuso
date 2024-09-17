@@ -5,7 +5,13 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      keyframes:{
+        scrollleft:{
+          '100%': { left: '-200px'}
+        }
+      }
+    },
   },
   plugins: [],
 }

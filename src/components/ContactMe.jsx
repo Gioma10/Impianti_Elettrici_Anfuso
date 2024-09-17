@@ -7,25 +7,27 @@ export default function ContactMe(){
     const [isSend, setIsSend]= useState(undefined);
     const form = useRef();
     
+    const timerResponse = (response)=>{
+        setIsSend(response);
+        setTimeout(()=>{
+            setIsSend(undefined);
+        }, 5000)
+    };
     const sendEmail = (e) => {
       e.preventDefault();
     
       emailjs
         .sendForm('service_lh8x7yk', 'template_xfib54o', form.current, {
-          publicKey: 'jvSM18jUrTRNQTF7',
+          publicKey: 'jvSM18jUrTRNQTF73',
         })
         .then(
           () => {
             console.log('SUCCESS!');
-            setInterval(()=>{
-                
-            },5000)
+                timerResponse(true);
           },
           (error) => {
             console.log('FAILED...', error.text);
-            setInterval(()=>{
-              
-            },5000)
+                timerResponse(false);
           },
         );
     }
