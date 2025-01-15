@@ -27,22 +27,33 @@ h2{
 }
 
 .about-me{
-  height: 70vh;
+  height: 60vh;
 }
 
 /* .services{
   height: 85vh;
 } */
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .smallest-p{
-    font-size: 9px;
-    padding: 20px;
+    font-size: 7px;
+    padding: 30px;
     
   }
   .smallest-position{
     top: -25px;
     left: -25px;
+  }
+}
+@media (min-width: 500px) {
+  .smallest-p{
+    font-size: 10px;
+    padding: 40px;
+    
+  }
+  .smallest-position{
+    top: -40px;
+    left: -40px;
   }
 }
 
@@ -61,4 +72,29 @@ h2{
   height: 100%;
   width: 100%;
   position: absolute;
+}
+
+.bordy-animation:hover::before{
+  content: " ";
+  /* width: 0%; */
+  animation: download 1s ease-out;
+  height: 2px;
+  width: 100%;
+  background-color:black;
+  position: absolute;
+  top: 100%;
+}
+.bordy-animation:hover{
+  /* color: rgb(14, 116, 144); */
+  color:white;
+}
+
+
+@keyframes download {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 100%;
+  }
 }

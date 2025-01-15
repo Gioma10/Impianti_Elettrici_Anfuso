@@ -14,8 +14,8 @@ export default function AboutMe(){
         //     </div>
         // </section>
         <section id='aboutMe' className='about-me'>
-            <h2 className="mt-10 text-center text-3xl sm:text-4xl md:text-6xl lg:text-7xl">Chi <span className='text-cyan-700'> sono </span></h2>
-            <div className='w-full h-full flex justify-center items-center '>
+            <h2 className="text-center text-5xl sm:text-5xl md:text-6xl lg:text-7xl my-10">Chi <span className='text-cyan-700'> sono </span></h2>
+            <div className='w-full h-full flex justify-center items-start'>
                 
                 <p className='smallest-p w-5/6 text-xs sm:text-sm md:text-base md:w-2/3 xl:w-1/2 p-10 bg-cyan-700 rounded-3xl relative'>
                     Ciao! Sono Antonio Anfuso, elettricista professionista con oltre [x] anni di esperienza. La mia passione per l’elettricità è nata fin da giovane, e oggi mi dedico a realizzare impianti sicuri ed efficienti sia in ambito civile che industriale.

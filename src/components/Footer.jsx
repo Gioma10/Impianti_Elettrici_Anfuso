@@ -1,23 +1,32 @@
+import { FaTiktok, FaPhoneAlt, FaLongArrowAltRight } from "react-icons/fa";
+import { IoIosMail } from "react-icons/io";
+import { GiPositionMarker } from "react-icons/gi";
+
+
 export default function Footer(){
     return (
-        <footer className="bg-cyan-700 flex items-center gap-10 justify-end">
-
-            <div >
-                <ul>
-                    <li>Apertura <br /> <span className="text-sm text-stone-300">8:00/13:00 - 15:00/18:00</span></li>
-                    <li className="my-10">Email<br /> <span className="text-sm text-stone-300">admin@gmail.com</span></li>
-                    <li>Telefono <br /> <span className="text-sm text-stone-300">+39 1234567890</span></li>
+        <footer>
+            <div className="  grid sm:grid-cols-2 sm:grid-rows-1 place-items-center gap-5 p-10">
+                <ul className="text-cyan-950 ">
+                    <li className="flex gap-2 items-center">
+                        <FaPhoneAlt size={20}/> 
+                        <p>+39 392-523-1181</p>
+                    </li>
+                    <li className="flex gap-2 items-center my-5">
+                        <IoIosMail size={20}/>
+                        <p><a href="mailto:infoanfuso@gmail.com">infoanfuso@gmail.com</a></p>
+                    </li>
+                    <li className="flex gap-2 items-center">
+                        <GiPositionMarker size={20}/>
+                        <p> Catania, CT</p>
+                    </li>
                 </ul>
-                <p> </p>
-                <p></p>
-                <p></p>
+                <div className="flex items-center justify-center gap-4 text-cyan-950">
+                    <p>Mi trovi anche qui:</p>
+                    <a target="_blank" href="https://www.tiktok.com/@impiantielettricianfuso"><FaTiktok size={30}/></a>
+                </div>
             </div>
-            <div className="m-10 map-responsive w-2/3">
-                <iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=Catania+(Impianti%20Elettrici%20Anfuso)&amp;t=k&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
-                    <a href="https://www.gps.ie/">gps tracker sport</a>
-                </iframe>
-            </div>
-            
+           <p className=" text-center w-full text-cyan-950">© 2024 Giovanni Mauro</p>        
         </footer>
     )
 }

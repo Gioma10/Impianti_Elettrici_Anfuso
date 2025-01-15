@@ -30,5 +30,62 @@
 .test5{
     animation-delay: calc(50s / 5 * (5 - 5) * -1);
 }
+/* .test1{
+    animation-delay: calc(50s / 5 * (5 - 1) * -1);
+}
+.test2{
+    animation-delay: calc(50s / 5 * (5 - 2) * -1);
+}
+.test3{
+    animation-delay: calc(50s / 5 * (5 - 3) * -1);
+}
+.test4{
+    animation-delay: calc(50s / 5 * (5 - 4) * -1);
+}
+.test5{
+    animation-delay: calc(50s / 5 * (5 - 5) * -1);
+} */
+
+@media  screen and (max-width: 600px) {
+    .testimonial{
+        animation-duration: 20s;
+    }
+    .test1{
+        animation-delay: calc(20s / 6 * (6 - 0) * -1);
+    }
+    .test2{
+        animation-delay: calc(20s / 6 * (6 - 1.5) * -1);
+    }
+    .test3{
+        animation-delay: calc(20s / 6 * (6 - 3) * -1);
+    }
+    .test4{
+        animation-delay: calc(20s / 6 * (6 - 4.5) * -1);
+    }
+    .test5{
+        animation-delay: calc(20s / 6 * (6 - 6) * -1);
+    }
+}
+
+@media  screen and (max-width: 450px) {
+    .testimonial{
+        animation-duration: 20s;
+    }
+    .test1{
+        animation-delay: 0s;
+    }
+    .test2{
+        animation-delay: -4s;
+    }
+    .test3{
+        animation-delay: -8s;
+    }
+    .test4{
+        animation-delay: -12s;
+    }
+    .test5{
+        animation-delay: -16s;
+    }
+}
 
 
