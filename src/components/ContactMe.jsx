@@ -54,7 +54,7 @@ export default function ContactMe(){
 
         setIsSend(undefined);
     }
-    console.log(enteredValue);
+    // console.log(enteredValue);
     
     const timerResponse = (response)=>{
         setIsSend(response);
@@ -74,11 +74,11 @@ export default function ContactMe(){
                 })
                 .then(
                 () => {
-                        console.log('SUCCESS!');
+                        // console.log('SUCCESS!');
                         timerResponse(true);
                     },
                 (error) => {
-                        console.log('FAILED...', error.text);
+                        // console.log('FAILED...', error.text);
                         timerResponse(false);
                     },
                 );
